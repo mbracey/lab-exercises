@@ -9,7 +9,7 @@ my.vector <- c(my.num, initials)
 vector.sum <- sum(my.vector)
 
 # Describe why this doesn't work: 
-# 
+#  It doesn't work because it is attempting to add a vector of numbers and a vector of characters.  You cannot combine types that are not 3the same, so therefore you are unable to combine the two vectors.
 
 install.packages("stringr")
 
@@ -18,7 +18,7 @@ my.line <- "Hey, hey, this is the library"
 print(str_length(my.line))
 
 # Describe why this doesn't work: 
-# 
+# In order to count the number of characters in a string, you need to use nchar(my.line) to get the length of the string
 
 said.the.famous <- paste(my.line, " - ", initial)
 
@@ -30,9 +30,14 @@ said.the.famous <- paste(my.line, " - ", initial)
 
 # Make a vector and use typeof to check what type R considers it to be
 
+first.name <- "Morgan"
+print(typeof(first.name))
+
 # Write a function `CompareLength` that takes in 2 vectors, and returns the sentence:
 # "The difference in lengths is N"
 
+last.name <- "Bracey"
+CompareLength
 
 # Pass two vectors of different length to your `CompareLength` function
 
